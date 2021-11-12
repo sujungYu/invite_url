@@ -1,16 +1,7 @@
 <template>
   <div>
     <button depressed slot="activator" @click="createInvitationToken"  color="#FFCC80">초대링크생성</button>  
-    "아래 링크를 복사하여 멤버를 초대하세요." 
-        <label outline readonly
-                      id = "invitationUrl"
-                      :value="invitationUrl"
-                    >
-                    {{token}}
-                    </label>
-
-
-
+        <label id = "invitationUrl" :value="invitationUrl">{{token}}</label>
   </div>
 </template>
 
